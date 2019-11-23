@@ -56,9 +56,7 @@ WebAPIApp/Scripts/jquery-1.10.2.min.js
 WebAPIApp/Scripts/jquery-1.10.2.js
 WebAPIApp/Scripts/jquery-1.10.2.intellisense.js
 WebAPIApp/Scripts/bootstrap.min.js
-WebAPIApp/Models/Student.cs
-WebAPIApp/Models/Employee.cs
-WebAPIApp/Models/AllActionFilterAttribute.cs
+
 WebAPIApp/index.html
 WebAPIApp/Global.asax.cs
 WebAPIApp/Global.asax
