@@ -1,0 +1,38 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+    
+    
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Students</title>
+</head>
+<body>
+    <div>
+        Show All Students
+        <ul id="students" />
+    </div>
+    <script>
+        var uri = 'api/Studens';
+
+        $(document).ready(function () {
+            // Send an AJAX request
+            $.getJSON(uri)
+            .done(function (data) {
+                debugger;
+                $.each(data, function (i, item) {
+                    var str = "<li> Name : " + item.StudentName + " Class:" + item.Standard;
+                    $('#students').append(str);
+                });
+            })
+            .fail(function (jqXHR, textStatus, err) {
+            });;
+        });
+    </script>
+
+</body>
+</html>
